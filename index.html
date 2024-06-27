@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        user-select: none;
+    }
+
+    .container{
+        width: 100%;
+        height: 94vh;
+        /* background-color: #ccc; */
+        display:flex;
+        align-items: center;
+        justify-content: left;
+
+
+    }
+
+    .content{
+        text-align: center;
+        margin-left: 200px;
+    }
+
+    .content h1{
+        font-size: 100px;
+        color: #fff;
+        margin-bottom: 50px;
+
+    }
+
+    .content a{
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        border: 2px solid #fff;
+        padding: 15px 25px;
+        border-radius: 50px;
+        transition: 0.2s;
+    }
+
+    .content a:hover{
+        background-color: white;
+        color: black;
+        
+    }
+    .background-clip{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        /* width: 100%;
+        height: 965px; */
+    }
+
+    @media(min-aspect-ratio:16/9){
+        .background-clip{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media(max-aspect-ratio:16/9){
+        .background-clip{
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .vishal{
+
+        /* background-color: aqua; */
+        height: 500px;
+        width: 700px;
+        margin: 150px 0px 0px 200px;
+        
+    }
+
+    .topic{
+
+        font-size: 37px;
+        color: #fff;
+       
+       
+    }
+    
+    .topicPosition{
+
+        width: 600px;
+        height: 500px;
+        padding-left: 100px;
+        padding-top: 16px;
+    }
+
+
+    #eye{
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .sharinganPosition{
+
+        width: 70px;
+        height: 500px;
+        margin-top: -480px;
+        margin-left: 20px;
+        
+    }
+
+    h2{
+        transition: 0.1s;
+    }
+
+    h2:hover{
+
+        color:black;
+        background-color:#fff;
+        border-radius: 5px;
+        background: linear-gradient( to left,red,orange,yellow);
+        /* opacity: 0.5; */
+
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    /* ************************HEADER*************************** */
+
+    .header{
+        width: 100%;
+        height: 70px;
+        /* background-color: aqua; */
+        position: absolute;
+    }
+
+    .logo1{
+
+        height: 100px;
+        width: auto;
+        margin-left: 30px;
+       
+    }
+
+    .logo2{
+
+        height: 100px;
+        width: auto;
+        margin-left: 20px;
+        
+
+    }
+
+    .logo{
+        float: left;
+        margin-top: -15px;
+    }
+
+    .afterlogo1{
+        float: left;
+        color: white;
+        margin-left: 100px;
+        margin-top: 25px;
+        height: 70px;
+        width: 150px;
+        text-align: center;
+
+    }
+
+    h3:hover{
+
+        background-color: none ;
+        color:red;
+    }
+
+    h3{
+        height: 70px;
+        transition: 0.2s;
+    }
+
+    /* ************************HEADER*************************** */
+
+
+    /* ************************FOOTER*************************** */
+
+    .footer{
+        width: 100%;
+        height: 70px;
+        /* background-color: aqua; */
+        position: absolute;
+        margin-top: 900px;
+
+    }
+
+    pre{
+
+    text-align: center;
+    color: #fff;
+    font: 4px;
+    font-style: oblique;
+    margin-top: 10px;
+   
+    
+    }
+
+    .medialogo{
+        height: 30px;
+        width: auto;
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 18px;
+
+    }
+
+    .socialmedia{
+        float: left;
+    }
+
+    .name{
+        margin-left: 180px;
+        margin-top: 25px;
+        position: absolute;
+        color: #fff;
+        transition: 0.2s;
+    }
+
+    .name:hover{
+        color: red;
+    }
+
+
+
+    /* ************************FOOTER*************************** */
+
+
+</style>
+
+
+
+
+
+<body>
+
+    <video loop muted autoplay plays-inline class="background-clip">
+        <source src="123.mp4" type="video/mp4">
+    </video>
+
+    <audio autoplay autostart loop play-inline id="backgroundMusic">
+        <source src="demon slayer.mp3">
+    </audio>
+
+
+    <!-- *************************************HEADER**************************************** -->
+    
+    <div class="header">
+
+        <div class="logo">
+
+            <img class="logo1" src="logo1.png">
+
+            <img class="logo2" src="logo2.png">
+            
+        </div>
+
+
+        <div class="afterlogo">
+
+        <div class="afterlogo1"><a href="http://127.0.0.1:5500/HACKETHON%202/index.html"><h3 class="HOME">HOME</h3></a></div>
+        <div class="afterlogo1"><a href="https://aquamanga.app/?gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S55ytJEcATZbLMXHGWkQ08Qw9p1SSWWYc9WlAvA1C2KFLjM43_SaUxoCAJoQAvD_BwE"><h3 class="MANGA">ANIME MANGA</h3></a></div>
+        <div class="afterlogo1"><a href="https://soundcloud.com/anime-music-to-love"><h3 class="MUSIC">ANIME MUSIC</h3></a></div>
+        <div class="afterlogo1"><a href=""><h3 class="RINGTONE">RINGTONE</h3></a></div>
+        <div class="afterlogo1"><a href=""><h3 class="ABOUT">ABOUT</h3></a></div>
+
+        </div>
+
+    </div>
+
+    <!-- *************************************HEADER**************************************** -->
+
+
+
+
+
+
+
+    <!-- *************************************FOOTER**************************************** -->
+
+    <div class="footer">
+
+        <div class="socialmedia">
+            <img class="medialogo" src="medialogo.png">
+            <p class="name">: vishalhaldar21 </p>
+        </div>
+
+
+        <pre>"In this world. Those who break the rules are scum, but those who are abandon their friends are worse than scum"</pre>
+        <pre>Gmail ID : vishalhaldar23@navgurukul.org       Address : Navgurukul dantewada campus, jawanga(C.G)</pre>
+        
+    </div>
+
+    <!-- *************************************FOOTER**************************************** -->
+
+
+
+    <div class="container">
+
+        <div class="content">
+            <h1> ANIME WORLD</h1>
+            <a href="http://127.0.0.1:5500/HACKETHON%202/index2.html">START</a>
+        </div>
+        
+
+
+        <div class="vishal">
+
+            <div class="topicPosition">
+
+            <div class="topic"><a href="https://aniwatch.to/subbed-anime"><h2>SUBBED ANIME</h2></a></div>
+            <div class="topic"><a href="https://aniwatch.to/dubbed-anime"><h2>DUBBED ANIME</h2></a></div>
+            <div class="topic"><a href="https://aniwatch.to/most-popular"><h2>MOST POPULAR</h2></a></div>
+            <div class="topic"><a href="https://aniwatch.to/movie"><h2>MOVIES</h2></a></div>
+            <div class="topic"><a href="https://aniwatch.to/tv"><h2>TV SERIES</h2></a></div>
+            <div class="topic"><a href="https://aniwatch.to/special"><h2>SPECIALS</h2></a></div>
+            <div class="topic"><a href="https://aniwatch.to/events"><h2>EVENTS</h2></a></div>
+
+            </div>
+
+            <div class="sharinganPosition">
+
+            <div class="sharingan"><img src="sharingan1.png" id="eye" ></div>
+            <div class="sharingan"><img src="sharingan2.png" id="eye"></div>
+            <div class="sharingan"><img src="sharingan3.png" id="eye"></div>
+            <div class="sharingan"><img src="sharingan4.png" id="eye"></div>
+            <div class="sharingan"><img src="sharingan5.png" id="eye"></div>
+            <div class="sharingan"><img src="sharingan6.png" id="eye"></div>
+            <div class="sharingan"><img src="sharingan7.png" id="eye"></div>
+
+           </div>
+        
+        </div>
+
+    
+            
+    </div>
+
+
+
+</body>
+</html>
